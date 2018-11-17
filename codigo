@@ -1,0 +1,24 @@
+include <stdio.h>
+
+// pedimos el ingreso de las palabras por teclado y las agregamos a un array de cadenas de caracteres.
+
+void listaPalabras(){
+  int cantidadPalabras;
+  printf("Ingrese la cantidad de palabras que desea agregar:\n");
+  scanf("%d", &cantidadPalabras);
+
+  char palabras[cantidadPalabras][15]; //la cantidad de palabras es ingresada al inicio por el usuario y cada una tiene una longitud no mayor a 15.
+  printf("Ingrese las palabras que desea agregar a la lista: \n");
+
+  for(int i=0; i<cantidadPalabras; i++){
+    scanf("%s", palabras[i]);
+  }
+  /*for(int i=0; i<cantidadPalabras; i++){
+    printf("%s\n", palabras[i]);
+  }*/  //LO PUSE PARA VER SI SE IMPRIMEN LAS PALABRAS.
+}
+
+int main(){
+  listaPalabras();
+  return 0;
+}
